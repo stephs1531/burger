@@ -1,10 +1,10 @@
 //========================================================
 //DEPENDENCIES
 
-var orm = require("./config/orm.js");
+var orm = require("../config/orm.js");
 
 //========================================================
-
+var burger = "";
 //code that calls ORM functions using burger specific input for the ORM
 //from activity 16–MVCExample
 // var burger = {
