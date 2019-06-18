@@ -29,20 +29,6 @@ var connection = require("./config/connection.js");
 
 app.use(routes);
 
-//=====================================================
-//ROUTES
-
-app.get("/", function(req, res) {
-  //we're doing the get when we load the page
-  connection.query("SELECT * FROM burgers;", function(err, data) {
-    if (err) {
-      return res.status(500).end();
-    }
-
-    res.render("index", { burgers: data });
-  });
-});
-
 app.listen(PORT, function() {
   console.log("App now listening at localhost:" + PORT);
 });

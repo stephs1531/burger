@@ -16,6 +16,31 @@ PAGE LAYOUT */
     width: 50%;
 }
 
-body {
-    background-color:teal;
+
+
+/* =====================================
+FONT STYLING */
+h1 {
+    text-align: center;
+    font-weight: bold;
+}
+
+.jumbotron p {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+/* =====================================
+FORM STYLING */
+#form-container {
+    margin: 0 auto;
+    padding: 100px;
+}
+
+#submit {
+    margin: 0 auto;
+    text-align: center;
 }
