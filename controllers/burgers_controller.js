@@ -26,12 +26,16 @@ router.get("/", function(req, res) {
 
 
 
-// router.post("/api/burgers", function(req, res) {
-
-//     //logic to post a new burger to the database
-
-//     res.json({result});
-// });
+router.post("/api/burgers", function(req, res) {
+    burger.create([
+      "burger_name", "devoured"
+    ], [
+      req.body.burger_name, req.body.devoured
+    ], function(result) {
+      // Send back the ID of the new quote
+      res.json({result});
+    });
+  });
 
 router.put("/api/burgers/:id", function(req, res) {
     var condition = "id=" + req.params.id;

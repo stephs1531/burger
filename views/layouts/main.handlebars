@@ -21,18 +21,18 @@
 
    var newBurger = {
        burger_name: $("#newBurger").val(),
-       devoured: false
+       devoured: 0
    };
    console.log(newBurger)
 
-  // $.ajax("/api/burgers", {
-   //    type: "POST",
-   //    data: newBurger
-  // }).then(function() {
-   //    console.log("created new burger!");
-    //  {{!-- //reload the page to get the updated list of burgers --}}
-    //   {{!-- location.reload(); --}}
-  // })
+   $.ajax("/api/burgers", {
+       type: "POST",
+       data: newBurger
+   }).then(function() {
+       console.log("created new burger!");
+      //reload the page to get the updated list of burgers
+       //location.reload();
+ });
 
   // var burger_id = $(this).children(".burger_id").val();
    //console.log(burger_id);
