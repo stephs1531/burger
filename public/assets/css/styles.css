@@ -1,0 +1,21 @@
+/* =====================================
+PAGE LAYOUT */
+#burger-groups {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 0, auto;
+
+}
+
+#to-eat{
+    width: 50%;
+}
+
+#eaten {
+    width: 50%;
+}
+
+body {
+    background-color:teal;
+}

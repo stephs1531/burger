@@ -2,6 +2,7 @@
 //DEPENDENCIES
 
 var express = require("express");
+var path = require("path");
 
 //========================================================
 
@@ -12,7 +13,7 @@ var PORT = process.env.PORT || 8080;
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-app.use(express.static("public"));
+app.use(express.static(path.join(__dirname, '/public')));
 
 var exphbs = require("express-handlebars");
 
