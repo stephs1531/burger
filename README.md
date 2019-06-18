@@ -9,3 +9,5 @@ start with config files
 get connections to apis and other files working
 build front end
 get onclick events working in the front end once connections are working
+
+CRUD with burgers

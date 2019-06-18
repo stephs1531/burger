@@ -1,3 +1,9 @@
+//front-end javascript
+//jquery
+//document ready
+// $(.js-devour).on("submit") {
+    // call endpoint with put to update the database from devoured false to devoured true
+// }
 //========================================================
 //DEPENDENCIES
 

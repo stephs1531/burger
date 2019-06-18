@@ -9,6 +9,8 @@ var router = express.Router();
 
 //========================================================
 
+//routes go in this file -- the equivalent of the api-routes files in other activities
+
 //Create routes and set up logic within those routes where required
 // router.get("/", function(req, res) {
 

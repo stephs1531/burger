@@ -1,3 +1,6 @@
+//THIS APP IS REALLY SIMILAR TO THE CATS APP 
+//copy cats server and package.json
+
 //========================================================
 //DEPENDENCIES
 
