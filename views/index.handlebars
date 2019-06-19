@@ -26,10 +26,38 @@
 <div class="container" id="burger-groups">
   <div id="to-eat">
     <h2>Eat a Burger!</h2>
+    <ul>
+  {{#each burger_data}}
+    {{#unless devoured}}
+    <li>
+    {{burger_name}}
+
+		{{#if devoured}}{{else}}<button class="eat-me" data-id="{{id}}">Eat Me!</button>{{/if}}
+
+    
+  </li>
+  {{/unless}}
+  {{/each}}
+</ul>
   </div>
   
   <div id="eaten">
     <h2>Already Eaten!</h2>
+
+    <ul>
+    {{#each burger_data}}
+    {{#if devoured}}
+      <li>
+      {{burger_name}}
+
+      {{#if devoured}}{{else}}<button class="eat-me" data-id="{{id}}">Eat Me!</button>{{/if}}
+
+      
+      </li>
+    {{/if}}
+    {{/each}}
+    </ul>
+
   </div>
 </div>
 

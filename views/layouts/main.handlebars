@@ -14,7 +14,7 @@
 <body>
     {{{body}}}
 <script>
-    $(document).ready(function() {
+$(document).ready(function() {
 
  $("#devour-form").on("submit", function(event) {
    event.preventDefault();
@@ -45,6 +45,28 @@
    //}); 
 
  });
+
+
+  $(".eat-me").on("click", function(event) {
+    var id = $(this).data("id");
+
+    var newDevoured = {
+      devoured: true
+    };
+
+    // Send the PUT request.
+    $.ajax("/api/burgers/" + id, {
+      type: "PUT",
+      data: newDevoured
+    }).then(
+      function() {
+
+        // Reload the page to get the updated list
+        location.reload();
+      }
+    );
+  });
+
 });
 </script>
 </body>

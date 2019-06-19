@@ -16,9 +16,12 @@ router.get("/", function(req, res) {
 
     //logic to get all burgers from the database
     console.log("initial state");
-    burger.all(function(burgerData) {
-        res.render("index", {burger_data: burgerData});
-        console.log(burgerData);
+    burger.all(function(data) {
+        var hbsObject = {
+            burger_data: data
+        };
+        res.render("index", hbsObject);
+        console.log(data);
     });
 
 
