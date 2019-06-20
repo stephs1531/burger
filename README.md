@@ -11,3 +11,5 @@ build front end
 get onclick events working in the front end once connections are working
 
 CRUD with burgers
+
+installing this to Heroku:
