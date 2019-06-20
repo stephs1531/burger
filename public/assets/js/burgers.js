@@ -15,7 +15,7 @@ $(document).ready(function() {
       }).then(function() {
           console.log("created new burger!");
          //reload the page to get the updated list of burgers
-          //location.reload();
+          location.reload();
     });
    
      // var burger_id = $(this).children(".burger_id").val();
